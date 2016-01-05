@@ -58,5 +58,9 @@ describe("limite case", function () {
     var result = convertor.romanConvertor(9999999);
     expect(result).toBe('Error wrong input');
   });
+    it("string = Error wrong input", function () {
+    var result = convertor.romanConvertor('string');
+    expect(result).toBe('Error wrong input');
+  });
 
 });  
